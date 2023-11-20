@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Formik, Form } from "formik";
 import formJson from "../data/custom-form.json";
 import { MySelect, MyTextInput } from "../components";
 import * as Yup from "yup";
 
-const initialValues: { [key: string]: any } = {};
-const requiredField: { [key: string]: any } = {};
+const initialValues: { [key: string]: any} = {};
+const requiredField: { [key: string]: any} = {};
 
 for (const input of formJson) {
   initialValues[input.name] = input.value;
